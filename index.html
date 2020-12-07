@@ -11,10 +11,18 @@
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="https://use.typekit.net/xqz7txj.css">
   <link rel="stylesheet" href="css/style.css">
+  
 
   <meta name="theme-color" content="#fafafa">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
-
+<style>
+    .mySlides {display:flex;
+    text-align: center;
+    margin: 0 auto;
+    padding: 20px 0px;}
+</style>
 <body>
 <a name="top"></a>
   <nav class="nav flex-row">
@@ -48,25 +56,17 @@
         </ul>
     </div>
 </nav>
-<h1>About Josh</h1>
-<main>
-    <div class="container">
-        <img class="roundtime" src="img/391A0751.jpeg" alt="Josh-Stanavage">
-    </div>
-    <div class="half">
-    <p>
-        Josh Stanavage is a full-time student and maker of things. At the University of Connecticut, Josh is a Junior in the Digital Media and Design (DMD) Major, concentrating in Web Design. When not declaring functions or pushing to GitHub, Josh works at UConn, School of Fine Arts as a Graphics/Illustration Assistant and moonlights as a Senior Resident Assistant for UConn, Residential Life. In his spare time, Josh enjoys hitting the pavement (running) and exercising his DSLR (photography). Josh loves learning and is a smiling optimist by default. 
-    </p>
-   <h3>Contact:</h3>
-   <span class="closer">
-    <p>Joshua Stanavage</p>
-   <p>tel: <a href="tel:+860-207-4966">860-207-4966</a></p> 
-   <p>email:<a href="mailto:joshua.stanavage@uconn.edu"> joshua.stanavage@uconn.edu</a></p>
-    </span>
-    </div>
+<main class="wire2">
+    <div style="max-width:1000px";>
+        <img class="mySlides" src="img/cs1.jpeg" style="width:90%">
+        <img class="mySlides" src="img/cs2.jpeg" style="width:90%">
+        <img class="mySlides" src="img/cs3.jpeg" style="width:90%">
+        <img class="mySlides" src="img/cs4.jpeg" style="width:90%">
+        <img class="mySlides" src="img/cs5.jpeg" style="width:90%">
+      </div>
 </main>
 <footer>
-    <a href="#top">^ Back to top of page ^</a>
+
 </footer>
 
   <script src="js/vendor/modernizr-3.8.0.min.js"></script>
@@ -81,6 +81,22 @@
     ga('create', 'UA-XXXXX-Y', 'auto'); ga('set','transport','beacon'); ga('send', 'pageview')
   </script>
   <script src="https://www.google-analytics.com/analytics.js" async></script>
+  <script>
+    var myIndex = 0;
+    carousel();
+    
+    function carousel() {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+      }
+      myIndex++;
+      if (myIndex > x.length) {myIndex = 1}    
+      x[myIndex-1].style.display = "block";  
+      setTimeout(carousel, 2000); // Change image every 2 seconds
+    }
+    </script>
 </body>
 
 </html>

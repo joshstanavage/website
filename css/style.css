@@ -282,7 +282,7 @@ nav .toggle-collapse .toggle-icons{
     width: 32px;
 }
 
-@media only screen and (max-width: 1180px){
+@media only screen and (max-width: 3000px){
     nav .nav-items{
         flex-direction: column;
     }
@@ -291,7 +291,7 @@ nav .toggle-collapse .toggle-icons{
         display: block !important;
     }
     .collapse{
-        height: 33rem;
+        height: 37rem;
     }
     nav .toggle-collapse{
         display: initial;
@@ -412,6 +412,7 @@ nav .toggle-collapse .toggle-icons{
     }
    
 }
+
 @media only screen and (min-width: 1260px){
 #video {
     display: flex;
