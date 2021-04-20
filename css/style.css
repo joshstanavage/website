@@ -140,6 +140,15 @@ p{
     width: 93%;
 
 }
+.flex-row-image{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-top: 1.6em;
+    width: 90%;
+    margin: 0 auto;
+
+}
 
 a{
     text-decoration: none;
@@ -176,6 +185,14 @@ img.roundtime {
 }
 .half{
     padding: 2em;
+}
+.description {
+    padding-top:30px;
+    padding-bottom: 20px;
+}
+.description {
+    padding-top:10px;
+    padding-bottom: 20px;
 }
 main{
     display: flex;
